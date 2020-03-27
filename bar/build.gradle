@@ -5,6 +5,8 @@ plugins {
 
 group = "com.temp.bar"
 
+def distFile = file("${projectDir}/dist.txt")
+
 publishing {
   publications {
     main(MavenPublication) {

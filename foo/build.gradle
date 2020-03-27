@@ -10,6 +10,12 @@ configurations {
 }
 
 dependencies {
-  implementation 'com.temp.bar:bar:1.0.0'
+  implementation('com.temp.bar:bar') {
+    version {
+      // Moving 'prefer' to be after strictly causes this to work as expected
+      prefer '1.0.0'
+      strictly '[1,2)'
+    }
+  }
 }
 
