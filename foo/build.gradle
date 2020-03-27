@@ -1,0 +1,15 @@
+
+repositories {
+  maven {
+    url "${projectDir}/../mavenTest"
+  }
+}
+
+configurations {
+  implementation
+}
+
+dependencies {
+  implementation 'com.temp.bar:bar:1.0.0'
+}
+

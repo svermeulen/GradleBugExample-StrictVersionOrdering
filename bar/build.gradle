@@ -1,0 +1,21 @@
+
+plugins {
+  id "maven-publish"
+}
+
+group = "com.temp.bar"
+
+publishing {
+  publications {
+    main(MavenPublication) {
+      artifact(distFile)
+    }
+  }
+
+  repositories {
+    maven {
+      url "${projectDir}/../mavenTest"
+    }
+  }
+}
+
